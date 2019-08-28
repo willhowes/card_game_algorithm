@@ -1,0 +1,39 @@
+True if duplicate, false if not duplicate
+
+1. input and output
+
+INPUT: array of string
+OUTPUT: True/False
+
+2. Function signature
+- function name = "equal_cards?"
+- input name = cards
+- input type = string[]
+- output type = boolean
+3. Write Tests
+
+["J"].eq false
+["J", 'K'].eq false
+["J", "J"]eq True
+["J", "J", "K"]eq True
+["J", "J", "K", "K"]eq true
+['A', 'J', 'K', 'Q', '7' ]eq false
+["J", "J", "J"]eq true
+["J", "J", "J", "J"]eq true
+[]eq false
+["Joker", "Joker"]eq true
+["Joker", "2"]eq false
+["13", "13"] eq true
+["14", "J", "J"]eq true
+
+4. Can I do it on paper?
+- sort cards into order ascending
+- check each card and check if is the same as the next card
+- if it is the same, return true
+- if not continue to check through next card
+- repeat the until run out of cards.
+
+5. Plain English
+(see above)
+
+6. Translate to code
